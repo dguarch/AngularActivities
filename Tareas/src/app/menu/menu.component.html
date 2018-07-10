@@ -1,0 +1,6 @@
+<nav>
+  <h2 *ngIf="showTitle" [class]="showTitle?unClase:''">Titulejo</h2>
+  <ul>
+    <li *ngFor="let unElement of listaMenu"><a href="#">{{unElement}}</a></li>
+  </ul>
+</nav>

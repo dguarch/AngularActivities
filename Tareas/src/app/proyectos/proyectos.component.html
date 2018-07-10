@@ -1,0 +1,13 @@
+<div >
+  <h2>Proyectos</h2>
+    <table (mouseover)="colorFondo()" [class]="fondoTabla">
+      <tr>
+        <th>ID</th>
+        <th>TITULO</th>
+      </tr>
+      <tr *ngFor="let unProj of proyectoListas">
+        <td>{{unProj.pid}}.</td>
+        <td>{{unProj.titulo}}</td>
+      </tr>
+    </table>
+</div>

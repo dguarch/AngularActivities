@@ -1,0 +1,35 @@
+<div>
+  <h2>Tareas</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Descripcion</th>
+      <th>Duracion</th>
+      <th>Proyecto</th>
+    </tr>
+    <tr *ngFor="let unTar of listaTareas">
+      <td *ngIf="evalPar(unTar.tid)">{{unTar.tid}}</td>
+      <td *ngIf="evalPar(unTar.tid)">{{unTar.descripcion}}</td>
+      <td *ngIf="evalPar(unTar.tid)">{{unTar.duracion}}</td>
+      <td *ngIf="evalPar(unTar.tid)">{{unTar.proyecto}}</td>
+    </tr>
+  </table>
+</div>
+
+<div>
+    <h2>Tareas con nombre de proyecto</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Descripcion</th>
+        <th>Duracion</th>
+        <th>Proyecto</th>
+      </tr>
+      <tr *ngFor="let unTar of listaTareas">
+        <td *ngIf="evalPar(unTar.tid)">{{unTar.tid}}</td>
+        <td *ngIf="evalPar(unTar.tid)">{{unTar.descripcion}}</td>
+        <td *ngIf="evalPar(unTar.tid)">{{unTar.duracion}}</td>
+        <td *ngIf="evalPar(unTar.tid)">{{getProjectName(unTar.proyecto)}}</td>
+      </tr>
+    </table>
+  </div>

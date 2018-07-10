@@ -1,0 +1,5 @@
+<div>
+  <ul *ngFor="let unItem of itemsLista">
+    <li class="item">{{unItem.nombre}} <span class="precio">{{unItem.precio}}<small>€</small></span><button (click)="addItem(unItem)">Add</button></li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+button{
+    margin-left: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+.item{
+    background-color: darkseagreen;
+    border: 1px solid gray;
+    padding: 15px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: left !important;
+}
+
+.precio{
+    color: red;
+    margin-left: 15px;
+}
